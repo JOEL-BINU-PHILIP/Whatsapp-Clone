@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
-
 import 'package:image_picker/image_picker.dart';
 void showSnackBar({required BuildContext context, required String content}) {
   ScaffoldMessenger.of(context).showSnackBar(
@@ -18,7 +17,7 @@ Future<File?> pickImageFromGallery(BuildContext context)async {
     if (pickedImage!=null) {
       image = File(pickedImage.path);
     }
-    
+    return image;
   } catch (e) {
     showSnackBar(context: context, content: e.toString());
   }

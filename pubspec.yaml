@@ -40,8 +40,8 @@ dependencies:
   flutter_riverpod: ^2.5.1
   cloud_firestore: ^4.16.0
   country_picker: ^2.0.25
-  image_picker: ^1.0.7
-  image_picker_android: ^0.8.9+5
+  image_picker: ^1.1.0
+  firebase_storage: ^11.7.2
 
 dev_dependencies:
   flutter_test:

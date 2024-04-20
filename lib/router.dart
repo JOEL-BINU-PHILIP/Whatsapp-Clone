@@ -11,16 +11,20 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         builder: (context) => const LoginScreen(),
       );
     case OTPScreen.routeName:
-    final verificationId = settings.arguments as String;
+      final verificationId = settings.arguments as String;
       return MaterialPageRoute(
-        builder: (context) => OTPScreen(verificationId: verificationId,),
+        builder: (context) => OTPScreen(
+          verificationId: verificationId,
+        ),
       );
     case UserInformationScreen.routeName:
-    return MaterialPageRoute(builder: (context) =>const UserInformationScreen());
-        default:
       return MaterialPageRoute(
-          builder: (context) => const Scaffold(
-                body: ErrorScreen(error: 'This page does not exist'),
-              ));
+          builder: (context) => const UserInformationScreen());
+    default:
+      return MaterialPageRoute(
+        builder: (context) => const Scaffold(
+          body: ErrorScreen(error: 'This page does not exist'),
+        ),
+      );
   }
 }

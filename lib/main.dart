@@ -28,7 +28,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Upchat',
+      title: 'Whatsapp Clone',
       theme: ThemeData.dark().copyWith(
         appBarTheme: const AppBarTheme(color: appBarColor),
         scaffoldBackgroundColor: backgroundColor,

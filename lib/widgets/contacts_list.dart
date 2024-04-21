@@ -4,7 +4,7 @@ import 'package:whatsapp/colors.dart';
 import 'package:whatsapp/screens/mobileChatScreen.dart';
 
 class ContactsList extends StatelessWidget {
-  const ContactsList({Key? key}) : super(key: key);
+  const ContactsList({super.key});
 
   @override
   Widget build(BuildContext context) {
